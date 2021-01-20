@@ -13,9 +13,9 @@ import ReactDOM from 'react-dom';
 /*---------------------------
 | Components
 ---------------------------*/
-import CoffeeAndTea from './React/CoffeeAndTea.jsx';
+import Container from './React/Container.jsx';
 
 /*---------------------------
 | Render to DOM
 ---------------------------*/
-ReactDOM.render(<CoffeeAndTea />, document.getElementById('root'));
+ReactDOM.render(<Container />, document.getElementById('root'));

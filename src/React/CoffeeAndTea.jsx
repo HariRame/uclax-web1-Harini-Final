@@ -13,8 +13,8 @@ const CoffeeAndTea = () => {
 
     return (
         <div> Coffee And Tea
-            <div></div>
-            <img src = {imgSrc}
+            <br></br>
+            <img src = {imgSrc} alt = "CoffeeOrTea"
                  onMouseOver= {imageOver}
                  onMouseOut= {imageOut} 
             />

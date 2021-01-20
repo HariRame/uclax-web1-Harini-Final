@@ -16,13 +16,13 @@
         <h2>Q1. Explain the difference between HTML, CSS and JS.</h2>
 
         <p>
-            <h2>HTML</h2>
+            <h3>HTML</h3>
             <div>HTML is the abbreviation of Hyper Text MarkUp Language. The browser orders or places the content as defined in the html page. The content can be text, images, list, links,icons,headings, paragraphs. The root element is the HTML tag. It contains the HEAD and the Body tags where the page title/heading and the content are placed respectively.
 
             Each element has attributes like Id, class and name that provides information about the element. </div>
         </p>
         <p>
-            <h2>CSS</h2>
+            <h3>CSS</h3>
             <div>CSS is the abbreviation for Cascading Style Sheets. It controls how the content will be displayed in the browser ie,. the font size, color, thickness of the  border and padding etc. The css can be defined in-line under the STYLE tag in the HTML document or defined in the .css file and then imported in the HTML file. 
 
             It is good practice to maintain basic page format across the website and the .css files helps acheive that.  
@@ -40,12 +40,40 @@
         </p>
 
         <p>
-            <h2>Javascript</h2>
+            <h3>Javascript</h3>
            <div>Javascript is the language that is used to make the site dynamic by adding functionalities to the html elements or by changing the css of an element or changing the element itself. It can also manipulate the data provided by user (for validation before passing to the server ) or data provided by the server(To display relevant information in the browser). </div>
 
         </p>
+        <p>
+         <h2>Q2. What are Single Page Apps (SPAs)? How do they differ from traditional multi-page Web Sites?</h2>
+        </p>
+        <p>
+            <h3>Single Page Application</h3>
+            <div>
+              
+              Single Page Applications are websites in which client need not reload the entire page when there is a change in data (may or may not be due to uer action), only that particular resource is refreshed or reloaded.   
 
-        <h2>Q2. What are Single Page Apps (SPAs)? How do they differ from traditional multi-page Web Sites?</h2>
+              Example, In the Facebook application, when the user on the Home page, scrolls through it and then clicks the 'Like' button.
+
+              Here  1)The user has changed data by clicking the button, 2)hence data is updated in the backend, 3) then it should be seen on the page that the post is Liked. 
+
+              In  a single page application, All of the above steps occurs seemlessly without page reload. All the HTML, CSS and Javascript  files of the SPA are downloaded by the browser initially, the DOM is created and then saved in the memory. This improves the speed and performance of the application.
+
+            </div>
+            <h3>Multi-page Application</h3>
+            <div>
+               Multi Page Applications have multiple web pages that will be retrieved from the server upon request from the browser. 
+
+               Example, In a E -Commerce websiteWhen a user  clicks on the image of a product. 
+               
+               Here 1)The browser requests the server to provide the page about the product. 2) The Server renders a new page to the client which may have new set of HTML,CSS & Javascript files 3) THe browser loads the file and creates the DOM.
+
+            </div>
+
+            The main difference between the SPA and the MPA is the in the way the web pages are rendered. SPA design is applied when the application needs to be fast and requires one page. MPA design is applied when the application is complex hence needs multiple pages.
+            
+        </p>
+        
 
     </body>
 </html>
