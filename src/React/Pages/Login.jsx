@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 /* Components ---------------------------*/
 
 
-const CoffeeAndTea = () => {
+const Login = () => {
     
     const [imgSrc, imgSrcUpdate] = useState('/assets/img/coffee1.jpg');
 
@@ -24,4 +24,4 @@ const CoffeeAndTea = () => {
 
 }
 
-export default CoffeeAndTea;
+export default Login;
