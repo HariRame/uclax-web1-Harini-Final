@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
+import styled from 'styled-components';
 
-/* Components ---------------------------*/
+const CoffeeAndTea = () => {
 
-
-const Login = () => {
-    
     const [imgSrc, imgSrcUpdate] = useState('/assets/img/coffee1.jpg');
 
     const imageOver = () => {imgSrcUpdate('assets/img/tea1.jpg')};
@@ -12,16 +10,18 @@ const Login = () => {
     const imageOut = () => {imgSrcUpdate('assets/img/coffee1.jpg')}
 
     return (
-        <div> Coffee And Tea
-            <br></br>
+        <CoffeeAndTeaStyled className='CoffeeAndTea'>
+            <h2>Coffee And Tea</h2>
             <img src = {imgSrc} alt = "CoffeeOrTea"
                  onMouseOver= {imageOver}
-                 onMouseOut= {imageOut} 
+                 onMouseOut= {imageOut}  
             />
-            
-        </div>
-    )
-
+        </CoffeeAndTeaStyled>
+    );
 }
 
-export default Login;
+export default CoffeeAndTea;
+
+const CoffeeAndTeaStyled = styled.div`
+    
+`;
