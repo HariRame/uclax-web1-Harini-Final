@@ -9,7 +9,10 @@ const Welcome = () => {
         <div>
             <h1>Welcome</h1>
            {/* <Slideshow /> */ }
-            <Tabbed />
+           <div className = "nested" >
+              <Tabbed />
+           </div>
+            
             <Staff />
         </div>
     );
