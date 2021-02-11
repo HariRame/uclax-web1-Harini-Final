@@ -5,20 +5,28 @@ import styled from 'styled-components';
 //import CoffeeAndTea from './Pages/Login';
 import Main from './Main'; 
 import Header from './Header.jsx';
-import Nav from './Nav.jsx';
+import NavLarge from './Nav/NavLarge.jsx';
+import NavMobile from './Nav/NavMobile.jsx';
 import Footer from './Footer.jsx';
 
 /*---Scripts--------------------------*/
 
-import {mq} from '../common/media_queries.js'
+import {mq} from '../common/media_queries.js';
+import useMediaQuery from '../common/useMediaQuery.js';
 
 const Container = () => {
+   const { isSmall } = useMediaQuery();
     return(
       <BrowserRouter>
         <ContainerStyled className = 'Container'>
           
            <Header/>
-           <Nav/>
+           {
+             isSmall 
+             ? <NavMobile />
+             : <NavLarge />
+           }
+           
            <Main/>
            <Footer/>
          </ContainerStyled>
