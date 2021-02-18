@@ -2,7 +2,7 @@ import React from 'react'
 /* Components--------------------------------------------------*/
 /*import Slideshow from './Slideshow.jsx' */
 import Tabbed from './Tabbed/Tabbed.jsx'
-import Staff from './Staff.jsx'
+import Staff from '../Staff/Staff.jsx'
 
 const Welcome = () => {
     return(
