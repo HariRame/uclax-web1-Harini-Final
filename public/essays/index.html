@@ -240,5 +240,54 @@
                            It is considered as CSS when it is used for the look of the website and it doesnt not have specific function like a background image.
                        </p>
                    </div>
+
+                   <h2>What is considered the right size for an image or video asset?</h2>
+                   <p>
+                       <div>
+                           The size of the image should be small so that it loads faster.The image size differs based on how good the quality of the image is needed in the application. For example the Instagram and LinkedIn different size requirements. 
+                           
+                           The recommended video resolutions are 1280 by 720 for landscape and 720 by 1280 for portrait The max file ize is 512MB.
+                           
+                       </div>
+                   </p>
+
+                   <h2>What is the difference between ID's, Classes and Tags? How does Specificity play a role in the selection of HTML elements (both in CSS and JS)</h2>
+
+                   <p>
+                       <h3>Id</h3>
+                       <div>ID is a attribute of an element in the DOM. It is used to uniquely identify the element. The ID can be used to manipulate the content in the tag or dynamically change the element.
+                           Eg. <div id ="root"></div>
+                       </div>
+
+                       <h3>Classes</h3>
+                       <div>
+                           Classes are also attributes of element. They are used to apply CSS to the element. The elements can also be identified using classes.
+                           All the three div elements are returned when using the getElementByClassName method.
+                          Eg. 
+                            &lt;div class = "Menu">About Us&lt;/div>
+                            &lt;div class = "Menu">Contact &lt;/div> 
+                            &lt;div class = "Menu">Program &lt;/div>
+                          
+                       </div>
+
+                       <h3>Tags</h3>
+                       <div>
+                           The tag describes the element. It is defined using the "<" and ">" symbols.
+                           &lt;a>Link to somehwere</a>
+                           &lt;button>Create a button to do something&lt;/button>
+                       </div>
+
+                       <div>
+                           THe specificity rules determine what css or actions will be applied on a particular element in the DOM. 
+
+                           * - Will select all element.
+                           Id: - Selects only one element with the particular Id.
+
+                           Inline styles have precedence over external styles that uses classes/attributes/pseudoClasses.
+
+                       </div>
+                   </p>
+
+
     </body>
 </html>

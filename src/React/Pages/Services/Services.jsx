@@ -1,15 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 /* Containers ---------------------------------------------*/
-import FilterNav from './FilterNav.jsx'
-import Gallery from './Gallery.jsx'
+import FilterNav from './FilterNav/FilterNav.jsx'
+import Gallery from './Gallery/Gallery.jsx'
+
+import {services} from './servicesData.js'
 
 const Services = () => {
+    const [catChosen, catChosenUpdate] = useState('Ammenities');
+    console.log('catChosen', catChosen);
     return(
         <div>
             <h1>Services</h1>
-            <FilterNav />
-            <Gallery />
+            <FilterNav services ={ services }  catChosen = {catChosen}/>
+            <Gallery services = { services } catChosen = {catChosen} />
         </div>
     );
 } 
