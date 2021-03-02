@@ -36,7 +36,8 @@ margin: 25px 0px;
         flex-wrap: wrap;
         justify-content: center;
         justify-content: flex-start;
-        
+        justify-content: flex-end;
+        justify-content: space-between;
       
         
     }
