@@ -296,6 +296,55 @@
                        Testing tools such as JAWS and WAVE are used in desktop and acceibility screen readers in iphone and android mobiles.
                    </div>
 
+                   <h2>What is a CSS Preprocessor? What are some examples? In React, what are styled components? How do Styled Components violate separation of concerns?</h2>
+
+                   <h3>What is a CSS Preprocessor? What are some examples?</h3>
+                   <div>
+                       
+                       CSS Processors are scripting languages that can dynamically change the css of elements in a aweb page by extending the exiting css features. For example, by using the '$' we can pass the CSS values in a variable. <br>
+                       Eg. $primary-color: seashell;
+                       $primary-bg: darkslategrey;
+                       
+                       body {
+                         color: $primary-color;
+                       
+                         background: $primary-bg;
+                       
+                       } <br>
+
+                       It also allows to create a template of css class and pass the arguments(Like a function ). <br>
+                       Eg. @mixin card($width, $height, $bg, $border) {
+                        width: $width;
+                      
+                        height: $height;
+                      
+                        background: $bg;
+                      
+                        border: $border;
+                      
+                      }
+
+                      .card-1 {
+                        @include card(300px, 200px, yellow, red 2px solid);
+                      }
+                      .card-2 {
+                        @include card(400px, 300px, lightblue, black 1px dotted);
+                      }
+                     <br>
+                      SASS, LESS and Stylus are exaples of CSS processors.
+
+                   </div>
+                   
+
+                   <h3>In React, what are styled components? How do Styled Components violate separation of concerns?</h3>
+                   <div>
+                       Styled components provide a way to apply css to selective tag elements. It is witten in JS files and the the react compiler generates the CSS class. THe Styled components are installed using the NPM.
+
+                       It is a safe approach to keep the different aspects of a program separately(like the JS,CSS and HTML files). Styled components are defined in the JS files and thus creates concern.
+                   </div>
+
+                   <h2>What is the difference between Web Hosts, Domains, and FTP?</h2>
+
 
     </body>
 </html>
