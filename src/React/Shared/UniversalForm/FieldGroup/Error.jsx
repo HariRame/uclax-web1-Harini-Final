@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Error = ({theField}) => {
 
-    if( !theField.errors || theField.length < 1) { return '';}
+    if( !theField.errors || theField.errors.length < 1) { return '';}
 
     return (
         <ErrorStyled className='Error'>

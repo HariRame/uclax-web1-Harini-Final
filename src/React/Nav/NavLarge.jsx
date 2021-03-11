@@ -8,7 +8,7 @@ const NavLarge = () => {
 
     return (
         <NavLargeStyled className='NavLarge'>
-            NavLarge 
+             
             <Nav />
         </NavLargeStyled>
     );
@@ -25,7 +25,7 @@ padding:20px;
 .Nav {
     display: flex;
     width: 500px;
-    outline: solid 2px white;
+    //outline: solid 2px white;
 
     
 }

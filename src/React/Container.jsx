@@ -39,17 +39,17 @@ const ContainerStyled = styled.div`
 
 background-color: pink;
 @media ${mq.desktop} {
-  background-color: maroon;
+  background-color: #c3cdd6;
 
 }
 
 @media ${mq.tablet} {
-  background-color: yellow;
+  background-color: #c3cdd6;
 
 }
 
 @media ${mq.ultrawide} {
-   background-color: purple;
+   background-color: #c3cdd6;
 } 
 `
 

@@ -28,18 +28,18 @@ const TabbedContentStyled = styled.div`
 
  @media ${mq.desktop} {
     display: flex;
-    outline: solid 1px red;
+    //outline: solid 1px red;
     padding: 10px;
  }
 .left {
     flex: 1;
-    outline: solid 1px purple;
+    //outline: solid 1px purple;
     padding: 10px;
     img {max-width: 100%;}
 }
  
 .right {
-    outline: solid 1px white;
+    //outline: solid 1px white;
     padding: 10px;
     flex:4;
 } 

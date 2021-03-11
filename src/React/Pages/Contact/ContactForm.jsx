@@ -13,7 +13,10 @@ const ContactForm = () => {
 
     return (
         <ContactFormStyled className='ContactForm'>
-            <UniversalForm fields = {contactFields}></UniversalForm>
+            <UniversalForm 
+            fields = {contactFields}
+            apURL = '/email/send'
+            submitText = 'Send Email' />
         </ContactFormStyled>
     );
 }

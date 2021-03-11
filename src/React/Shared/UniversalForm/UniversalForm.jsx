@@ -3,12 +3,13 @@ import styled from 'styled-components';
 
 /*Scripts-----------------------------------------*/
 import {isValidEmail} from '../../../common/utilities.js';
+import API from '../../../common/API.js';
 
 /*COmponents--------------------------------------*/
 import Button from './Button.jsx';
 import FieldGroup from './FieldGroup/FieldGroup.jsx';
 
-const UniversalForm = ({fields}) => {
+const UniversalForm = ({fields,apURL,submitText}) => {
 
     const[theFields, theFieldsUpdate] = useState(fields);
 
@@ -49,13 +50,38 @@ const UniversalForm = ({fields}) => {
         theFieldsUpdate(newFields);
     }
 
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        console.log('I am submitted.');
+        const hasErrors = theFields.find( (field) => {
+            return(field.errors && field.errors.length > 0)
+        });
+
+        if(!hasErrors ) {
+            console.log('Ready to submit data', theFields);
+            API.post(apURL, theFields).then( (response) => {
+                 console.log('response is', response);
+            });
+
+        }
+
+    }
+
     return (
-        <UniversalFormStyled className='UniversalForm'>
-            <FieldGroup id = 'email' theFields = {theFields} 
-                        handleFieldUpdate = {handleFieldUpdate} />
-        <FieldGroup id = 'message' theFields = {theFields} 
-                        handleFieldUpdate = {handleFieldUpdate} />
-        <Button>Send Email</Button>
+        <UniversalFormStyled 
+            className='UniversalForm'
+            onSubmit = {handleFormSubmit}>
+                {
+                    theFields.map ( (theField, idx) => {
+                        return <FieldGroup 
+                                    key = {idx}
+                                    id = {theField.id}
+                                    theFields = {theFields}
+                                    handleFieldUpdate = { handleFieldUpdate} />
+                    })
+                }
+            
+                <Button type ='submit'>{submitText}</Button>
 
         </UniversalFormStyled>
     );
@@ -63,7 +89,7 @@ const UniversalForm = ({fields}) => {
 
 export default UniversalForm;
 
-const UniversalFormStyled = styled.div`
+const UniversalFormStyled = styled.form`
 
     max-width: 500px;
     padding: 10px;
