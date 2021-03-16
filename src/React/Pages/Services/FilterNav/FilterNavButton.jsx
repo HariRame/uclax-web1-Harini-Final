@@ -29,13 +29,14 @@ const FilterNavButtonStyled = styled.div`
     button {
         display: inline-block;
         width: 150px;
-        background-color: white;
+        background-color: #d68787;
         padding: 10px 0px;
         margin: 0px 10px;
     }
     &.active {
         button {
-            background-color: blue;
+            background-color: #9c1a1a;
+            color: white;
         }
     }
     

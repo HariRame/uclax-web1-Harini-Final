@@ -8,12 +8,18 @@ import GoogleMap from './GoogleMap.jsx'
 const Contact = () => {
     return(
         <div>
-            <h1>Contact</h1>
-            <Profile />
-            <ContactForm />
-            <GoogleMap />
+            <div><h1>More information</h1></div>
+                <div className = "divInline">
+                    <Profile />
+                    <ContactForm />
+               </div>
+                  
+            {/* <GoogleMap /> */}
         </div>
     );
 }
 
+
 export default Contact;
+
+

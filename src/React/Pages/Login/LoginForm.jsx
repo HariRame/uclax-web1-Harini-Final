@@ -11,11 +11,20 @@ const LoginForm = () => {
 
     return (
         <LoginFormStyled className='LoginForm'>
-            <UniversalForm 
+
+           <div>
+               Login here to start ordering.
+           </div>
+           <UniversalForm 
+                className = 'frm'
                 fields = {loginFields}
-                
                 apURL = '/email/send'
-                submitText = 'Login In' /> 
+                submitText = 'Log In' /> 
+          
+            
+
+           
+            
         </LoginFormStyled>
     );
 }
@@ -23,5 +32,20 @@ const LoginForm = () => {
 export default LoginForm;
 
 const LoginFormStyled = styled.div`
+   background-color: white;
+   text-align: center;
+   color: #c26c6c;
+   padding: 10px;
+   font-weight: 20px;
+   font-size: 20px;
+   
+
+   form {
+    background-color :#c3cdd6;
+    margin-top: 10px;
     
+   }
+   button {
+    color: #c26c6c;
+   }
 `;

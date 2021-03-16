@@ -27,7 +27,7 @@ const TabbedNavItem = ({tabItem,changeTabs,chosenTab}) => {
 export default TabbedNavItem;
 
 const TabbedNavItemStyled = styled.div`
-   color: white;
+   color: black;
    line-height: 30px;
    display: inline-block;
    width: 100px;
@@ -36,13 +36,14 @@ const TabbedNavItemStyled = styled.div`
    border-radius: 5px 5px 0px 0px;
    font-size: 12px;
    cursor: pointer;
-   background-color: #065757;
+   background-color: #d68787;
 
    &:hover {
-       background-color: #032d2d;
+       background-color:#e25555;
    }
    &.active {
-       background-color: teal;
+       background-color: #9c1a1a;
+       
    }
     
 `;

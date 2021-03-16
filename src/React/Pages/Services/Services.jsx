@@ -11,7 +11,7 @@ const Services = () => {
     console.log('catChosen', catChosen);
     return(
         <div>
-            <h1>Services</h1>
+            <h1>Categories</h1>
             <FilterNav services ={ services }  
                        catChosen = {catChosen}
                        catChosenUpdate = {catChosenUpdate}/>

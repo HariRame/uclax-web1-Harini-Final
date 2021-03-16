@@ -37,7 +37,9 @@ export default Container;
 
 const ContainerStyled = styled.div`
 
-background-color: pink;
+height: auto;
+
+background-color: #c3cdd6;
 @media ${mq.desktop} {
   background-color: #c3cdd6;
 
@@ -51,6 +53,6 @@ background-color: pink;
 @media ${mq.ultrawide} {
    background-color: #c3cdd6;
 } 
-`
+`;
 
 

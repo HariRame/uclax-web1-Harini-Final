@@ -93,6 +93,7 @@ const UniversalFormStyled = styled.form`
 
     max-width: 500px;
     padding: 10px;
-    margin: 50px auto;
+    margin: 10px auto;
+    
     
 `;

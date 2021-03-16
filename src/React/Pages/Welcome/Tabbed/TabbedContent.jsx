@@ -23,7 +23,7 @@ const TabbedContent = ({chosenTab}) => {
 export default TabbedContent;
 
 const TabbedContentStyled = styled.div`
- background-color: teal;
+ background-color: #e25555;
  padding:20px;
 
  @media ${mq.desktop} {

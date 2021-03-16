@@ -32,7 +32,9 @@ const StaffMember = ({member}) => {
                 width = '200px'
             >
                 <img src={member.image} alt={ member.name } />
-                {<h2>{member.name}</h2>}
+                {<div><h2>{member.name}</h2>
+                 <h4>cuisine: {member.cuisine}</h4> </div>}
+                
             </Lightbox>
         </StaffMemberStyled>
     );
@@ -62,7 +64,7 @@ img {
 h3 {
     margin: 15px;
     color: white;
-    background-color: maroon;
+    background-color: #9c1a1a;
     font-size: 16px;
     padding: 5px;
     

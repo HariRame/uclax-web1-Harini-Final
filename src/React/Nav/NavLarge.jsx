@@ -19,7 +19,7 @@ export default NavLarge;
 const NavLargeStyled = styled.div`
 display: flex;
 justify-content: center;
-background-color: #003232;
+background-color: #e25555;
 padding:20px;
 
 .Nav {
@@ -32,16 +32,16 @@ padding:20px;
 a {
     flex: 1;
     text-align: center;
-    background: #008080;
-    color: white;
+    background: #d68787;
+    color: Black;
     text-decoration: none;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
 
     &.active {
-        background-color: orange;
-        color: #003232;
+        background-color: #9c1a1a;
+        color: white;
     }
 
 }
