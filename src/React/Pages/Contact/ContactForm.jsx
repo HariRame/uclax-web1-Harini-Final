@@ -32,11 +32,11 @@ export default ContactForm;
 const ContactFormStyled = styled.div`
         
        width: 50%; 
-       margin-top: 20px;
+       margin-top: 10%;
        .text {
            text-align: center;
-           font-size: 20px;
-           font-weight: 10px;
+           font-size: 1em;
+           //font-weight: 10px;
            color: #9c1a1a;
            
        }

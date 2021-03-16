@@ -8,7 +8,7 @@ import PlayerLarge from './PlayerLarge.jsx';
 import useMediaQuery from '../../../common/useMediaQuery.js';
 
 const Player = ({urls, titles}) => {
-    const { isSmall } = useMediaQuery();
+    const { isTablet } = useMediaQuery();
 
     console.log('url is ', urls);
 
@@ -17,7 +17,7 @@ const Player = ({urls, titles}) => {
             <div>
 
                  {
-                      isSmall 
+                      isTablet 
                     ? <PlayerMobile urls = {urls } titles = {titles} />
                     : <PlayerLarge urls = {urls } titles = {titles} />
                   } 

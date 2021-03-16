@@ -9,7 +9,7 @@ const PlayerMobile = ({urls, titles}) => {
 
     return (
         <PlayerMobileStyled className='PlayerMobile'>
-            <ReactPlayer url= {urls} width = '100px' height = '100px'/>
+            <ReactPlayer url= {urls} width = '50%' height = '50%'/>
              <div>{titles}</div> 
         </PlayerMobileStyled>
     );

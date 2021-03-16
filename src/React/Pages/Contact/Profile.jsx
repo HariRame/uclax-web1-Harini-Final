@@ -23,7 +23,7 @@ const Profile = () => {
                    } 
               
                 
-                <div>{videos.title}</div> 
+               
               </div>
         </ProfileStyled> 
     );
@@ -38,11 +38,11 @@ const ProfileStyled = styled.div`
           
           height: 10px;
           text-align: center;
-           font-size: 40px;
+           font-size: 2em;
            font-weight: 20px;
            color: #9c1a1a;
            margin-bottom: 10px;
-           padding: 30px;
+           padding-bottom: 2em;
       }
         
     

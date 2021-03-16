@@ -9,7 +9,7 @@ const PlayerLarge = ({urls, titles}) => {
 
     return (
         <PlayerLargeStyled className='PlayerLarge'>
-           <ReactPlayer url= {urls} width = '300px' height = '200px'/>
+           <ReactPlayer url= {urls} width = '75%' height = '75%'/>
              <div>{titles}</div> 
         </PlayerLargeStyled>
     );
